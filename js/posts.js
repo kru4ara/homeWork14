@@ -12,14 +12,14 @@ class Posts {
 
   _templatePost ({ username, name, email, website }) {
     const template = `
-    <div class="card" style="width: 18rem;">
+    <div class="card m-3" style="width: 40%">
       <div class="card-header">
-        ${username}
+       Nickname: <b>${username}</b>
       </div>
       <ul class="list-group list-group-flush">
         <li class="list-group-item">Name: ${name}</li>
         <li class="list-group-item">E-Mail: ${email}</li>
-        <li class="list-group-item">${website}</li>
+        <li class="list-group-item">Web page: <a href="#">${website}</a></li>
       </ul>
     </div>
     `
